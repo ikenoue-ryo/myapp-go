@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"myapp/app/models"
 )
 
@@ -17,9 +16,6 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	user2, _ := models.GetUser(2)
-	todos, _ := user2.GetTodosByUser()
-	for _, v := range todos {
-		fmt.Println(v)
-	}
+	t, _ := models.GetTodo(2)
+	t.DeleteTodo()
 }
