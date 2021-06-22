@@ -1,6 +1,8 @@
 package main
 
-import "myapp/app/controllers"
+import (
+	"myapp/app/controllers"
+)
 
 func main() {
 	controllers.StartMainServer()
