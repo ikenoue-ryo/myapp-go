@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+2021/06/24 07:19:37 main.go:17: near "?": syntax error
+2021/06/24 07:21:21 main.go:17: near "?": syntax error
+2021/06/24 07:21:53 main.go:17: near "?": syntax error
+2021/06/24 07:42:34 main.go:17: near "?": syntax error
+2021/06/24 07:46:45 main.go:17: near "?": syntax error
+2021/06/24 08:16:41 route_auth.go:38: sql: no rows in result set
+2021/06/24 08:16:41 server.go:3061: http: superfluous response.WriteHeader call from myapp/app/controllers.authenticate (route_auth.go:56)
+=======
 2021/06/19 11:28:57 main.go:15: test
 2021/06/20 22:12:25 users.go:103: table sessions has no column named user_id
 2021/06/20 22:12:25 main.go:16: no such column: user_id
@@ -7,3 +16,4 @@
 2021/06/20 22:22:58 main.go:17: no such column: user_id
 2021/06/20 22:23:12 users.go:103: table sessions has no column named user_id
 2021/06/20 22:23:12 main.go:17: no such column: user_id
+>>>>>>> develop
