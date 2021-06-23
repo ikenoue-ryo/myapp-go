@@ -93,10 +93,10 @@ func GetUserByEmail(email string) (user User, err error) {
 
 func (u *User) CreateSession() (session Session, err error) {
 	session = Session{}
-	cmd1 := `insert into sessions (
-		uuid, 
-		email, 
-		user_id, 
+	cmd1 := `insert into sessions(
+		uuid,
+		email,
+		user_id,
 		created_at) values (?, ?, ?, ?)`
 
 	_, err = Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
@@ -132,7 +132,6 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 		valid = false
 		return
 	}
-
 	if sess.ID != 0 {
 		valid = true
 	}
